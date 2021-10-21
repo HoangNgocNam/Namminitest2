@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1,9, 4, 6, 7, 8, "a", "b", "c"];
+    let count = 0;
+    let inputElement = prompt('Nhập phần tử:');
+
+    function element() {
+        for (let i = 0; i < array.length; i++) {
+            if (inputElement === array[i]) {
+                count++;
+            }
+        }
+        document.write('Số lần xuất hiện phần tử' + ' ' + inputElement + ' ' + 'là' + ' ' + count + ' ' + 'lần');
+    }
+    element();
+    </script>
+</body>
+</html>
